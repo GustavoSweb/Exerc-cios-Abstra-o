@@ -14,6 +14,7 @@ class Encomenda{
         console.log("calcular frete")
     }
 
+    
 
 
 }
