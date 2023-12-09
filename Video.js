@@ -1,9 +1,9 @@
 class Video{
     constructor(title, description, likes, duration){
-        this.title = "",
-        this.description = "",
-        this.likes = "",
-        this.duration = ""
+        this.title = title,
+        this.description = description,
+        this.likes = likes,
+        this.duration = duration
     }
 
     Play(){
