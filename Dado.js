@@ -3,7 +3,7 @@ class Dado{
         this.faces = faces
     }
     Rolar(){
-        console.log("Caiu, o numero: "+Math.floor((this.faces+1)*Math.random()))
+        console.log("Caiu, o numero: "+Math.floor(this.faces*Math.random()+1))
     }
 }
 
