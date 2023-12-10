@@ -1,19 +1,32 @@
+class Pagamento{
+    Pagar(){
+        console.log("Pagar")
+    }
+}
+class MarcarAgendamento{
+    Marcar(){
+        console.log("Agendado")
+    }
+}
+class ChecarVaga{
+    Checar(){
+        console.log("checando vaga")
+    }
+}
+
 class Agenda{
     constructor(nomePaciente, operacao, data, horario){
         this.nomePaciente = nomePaciente,
         this.operacao = operacao,
         this.data = data,
-        this.horario = horario
-
+        this.horario = horario,
+        this.pagamento = new Pagamento(),
+        this.marcarAgendamento = new MarcarAgendamento(),
+        this.checarVaga = new ChecarVaga()
     }
-    ChecarVaga(){
-        console.log("checando vaga")
+    Agendar(){
+        this.checarVaga.Checar()
+        this.marcarAgendamento.Marcar()
+        console.log("Finalizado")
     }
-    Pagamento(){
-        console.log("Pagar")
-    }
-    MarcarAgendamento(){
-        console.log("Agendado")
-    }
-
 }
