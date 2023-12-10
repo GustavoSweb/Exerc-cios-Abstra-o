@@ -1,12 +1,14 @@
 class Mensagem{
-    constructor(messagem, emissor, recebidor, dataEnvio, status){
-        this.messagem = messagem, 
+    constructor(menssagem, emissor, recebidor, dataEnvio){
+        this.menssagem = menssagem, 
         this.emissor = emissor, 
         this.recebidor = recebidor, 
         this.dataEnvio = dataEnvio, 
-        this.status = status
+        this.status = false
     }
-
+    checarStatus(){
+        this.status = true
+    }
     Editar(){
         console.log("Editado")
     }
@@ -16,7 +18,7 @@ class Mensagem{
     Deletar(){
         console.log("Deletado para todos")
     }
-    Compartilhar(){
+    static Compartilhar(){
         console.log("Compartilhado")
     }
 
