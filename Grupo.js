@@ -18,3 +18,15 @@ class Grupo{
     }
 
 }
+
+class Canal extends Grupo{
+    constructor(nome, foto, membros, admins, descricao, config, teste){
+        super(nome, foto, membros, admins, descricao, config)
+        this.teste = teste
+    }
+    Admin(){
+        console.log("Herança")
+        super.PromoverAdmin()
+        
+    }
+}
